@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(242, 212, 186, 1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(91, 193, 216, 1);
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('beach-van.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 0.5rem 1rem;
+    background: rgba(216, 186, 160, 1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background-color: rgba(167, 228, 242, 1);
+}
+
+article {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background: rgba(101, 205, 216, 1);
+    border-radius: 5px;
+    color: #fff;
+}
+
+footer {
+    padding: 1rem;
+    background: rgba(91, 193, 216, 1);
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .articles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 80%;
+    }
+}
